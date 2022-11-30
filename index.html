@@ -1,0 +1,82 @@
+<html> 
+<head> 
+ <title> Latihan ke 3 </title> 
+</head> 
+
+<body bgcolor = "gold"> 
+<script language="Javascript"> 
+
+function tekan(form) 
+{ 
+
+var nimstr=(document.f10114044.nim.value); 
+var namastr=(document.f10114044.nama.value);
+var alamatstr=(document.f10114044.alamat.value); 
+var jenisstr=(document.f10114044.jenis.value); 
+var agamastr=(document.f10114044.agama.value); 
+var status=""; 
+ if(form.status.checked==true) 
+  {status="Kawin";} 
+     else 
+  {status="Tidak Kawin";} 
+var jurusanstr=(document.f10114044.jurusan.value); 
+var komstr=(document.f10114044.kom.value); 
+document.f10114044.onim.value=nimstr; 
+document.f10114044.onama.value=namastr;
+document.f10114044.oalamat.value=alamatstr;
+document.f10114044.ojenis.value=jenisstr; 
+document.f10114044.oagama.value=agamastr; 
+document.f10114044.ostatus.value=status; 
+document.f10114044.ojurusan.value=jurusanstr; 
+document.f10114044.okom.value=komstr; 
+
+} 
+</script> 
+
+<center> 
+<h2><b> Data Mahasiswa </h2></b> 
+<h2><b> Politeknik Amamapare </h2></b></center>
+<hr width="600" color="black">
+
+<form name="f10114044"><pre> 
+NIM               : <input type="text" size="12" name="nim" value=""><br> 
+Nama Mahasiswa    : <input type="text" size="20" name="nama" value=""><br>
+Alamat            : <input type="text" size="15" name="alamat" value=""><br>
+Jenis Kelamin     : <select name="jenis" size="1"> 
+      <option value=""></option> 
+      <option value="Laki-laki"> Laki-laki </option> 
+      <option value="Perempuan">Perempuan</option></select><br> 
+Agama             : <select name="agama" size="1">
+    <option value=""></option> 
+       <option value="Islam"> Islam </option> 
+       <option value="Kristen"> Kristen </option> 
+       <option value="Hindu"> Hindu </option> 
+       <option value="Budha"> Budha </option> 
+       <option value="Katolik"> Katolik </option></select><br> 
+Status            : <input type="radio" value="Kawin" name="status"> Kawin<br> 
+Jurusan Di Unikom : <select name="jurusan" size="1">
+    <option value=""></option> 
+      <option value="Teknik Rekayasa Internet"> Teknik Rekayasa Internet </option> 
+    <option value="Teknik Mesin"> Teknik Mesin </option> 
+      <option value="Teknik Listrik"> Teknik Listrik </option> 
+      <option value="Teknik sipil"> Teknik sipil </option> 
+      <option value="Teknik Pertambangan"> Teknik Pertambangan </option></select><br>
+Komentar          : <textarea name="kom" rows="4" cols="40" ></textarea></pre><br> 
+
+<center> 
+<input type="button" value="Kirim" onclick="tekan(this.form)"> 
+<input type="reset" value="Ulang"></center><br> 
+<h2><b><center> Data Mahasiswa Politeknik Amamapare </center></h2></b><pre>
+  <hr width="600" color="black"> 
+NIM               : <input type="text" size="11" name="onim"><br>
+Nama Mahasiswa    : <input type="text" size="20" name="onama"><br>
+Alamat            : <input type="text" size="15" name="oalamat"><br>
+Jenis Kelamin     : <input type="text" size="11" name="ojenis"><br> 
+Agama             : <input type="text" size="11" name="oagama"><br>
+Status            : <input type="text" size="11" name="ostatus"><br>
+Jurusan Di Unikom : <input type="text" size="20" name="ojurusan"><br>
+Komentar          : <textarea name="okom" rows="4" cols="40"></textarea></pre><br> 
+
+</form> 
+</body> 
+</html>
